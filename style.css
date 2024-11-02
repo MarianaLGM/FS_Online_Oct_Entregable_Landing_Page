@@ -1,0 +1,219 @@
+/*frase arriba del todo */
+
+p{
+    background-color: #EA9FA6FF;
+    color: white;
+    font-family: "Futura", sans-serif;
+    font-size: 12px;
+    letter-spacing: .2em;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+}
+
+
+/* OK logo planet skin*/
+.logo{
+    display: flex;
+    max-width: 95px;  
+    
+}
+
+.imagenlogo{
+    text-align: center;
+    justify-content: start;
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 50px; 
+    height: 28px;
+}
+  
+/* OK navegador cabecera*/
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 30px;
+} 
+
+/*OK botonera central navegador*/
+.navigation{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 70px;
+    margin-top: 10px;
+    color: rgba(0, 157, 149, 1) !important;
+    font-size: 20px !important;
+}
+
+/*OK quitar los bullets botonera central navegador*/
+li{
+    display: flex;
+    margin-top: -200px;
+    margin-right: 10px;
+}
+
+.nav1{
+    margin-bottom: 50px;
+    
+}
+.nav2{
+    margin-bottom: 50px;
+}
+
+.navigation{
+    font-size: 18px !important;
+    font-family: "Futura", sans-serif !important;
+}
+/* OK iconos arriba derecha*/
+.container2{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.persona{
+    display: flex;
+    color: rgba(0, 157, 149, 1);
+    justify-content: end;
+    align-items: center;
+    margin-top: -350px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.lupa{
+    display: flex;
+    color: rgba(0, 157, 149, 1);
+    justify-content: end;
+    align-items: center;
+    margin-top: -350px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.carrito{
+    display: flex;
+    color: rgba(0, 157, 149, 1);
+    justify-content: end;
+    align-items: center;
+    margin-top: -350px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/*OK Formato para el texto principal y para permitir que esté flotando sobre el fondo*/
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: last baseline;
+    background-size: cover;
+    background-position: center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://planet-skin.com/cdn/shop/files/1800x800-1_1_2ab6ae26-0fb0-47b1-b897-2a7ec55c1b27_1800x.jpg?v=1728469785" );
+    height: 800px;
+    width: 1680px;
+    margin-top: -90px;
+   
+}  
+
+/*OK formato cada una de las frases sobre imagen*/
+.text1{
+    position: absolute;
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 11;
+    margin-top: -.325em; 
+    margin-left:50px;
+    
+}
+.text2{
+    position: absolute;
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-size: 20;
+    margin-top: 50px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+
+/*botones de color rosa parte inferior*/
+.buttons{
+    margin-top: 600px;
+    color: white;
+}
+
+.buttonPlanetSkinClub{
+    background-color: #EA9FA6FF;
+    color: white;
+    padding: 14px 28px;
+    border: 1px solid transparent;
+    height: 60px;
+    width: 220px;
+    font-size: 18px;
+    border-radius: 40px;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.buttonParaMi{
+    font-size: 1.5em;
+    border-radius: -20px;
+    background-color: #EA9FA6FF;
+    padding: 14px 28px;
+    border: 1px solid transparent;
+    height: 50px;
+    width: 140px;
+    font-size: 12px;
+    letter-spacing: .2em;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}    
+
+.buttonChatOnline{
+    border-radius: 120px;
+    background-color: #EA9FA6FF;
+    border: 1px solid transparent;
+    height: 70px;
+    width: 70px;  
+    margin-left: 1600px;
+}
+
+.button1,.button2,.button3{
+    text-decoration: none;
+    color: white;
+}
+
+/*-OK Cuando la pantalla sea menor de 480px, el menú del navbar debe convertirse en un menú desplegable u oculto.*/
+
+@media screen and (max-width: 480px){
+    .desplegable{
+      display: none;
+    }
+}
+
+/*OK Cuando la pantalla sea mayor de 480px y menor de 768px, el menú tendrá que estar en el lateral.*/
+@media screen and (min-width: 480px){   
+    .desplegable{
+        display: block;
+      }
+}
+  @media screen and (max-width:768px){   
+    .desplegable{
+        display: block;
+      }
+}
+
+
+  /*DUDAS PARA RESOLVER EL LUNES CON ALDO
+  1. Tamaño de la página
+  2. boton club se tendría que mover en lugar de dejar fijo
+  3. tamaño iconos todos arriba y abajo 
+  4. bton chat onlie poner a la derecha
+
