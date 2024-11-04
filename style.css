@@ -10,6 +10,7 @@ p{
     justify-content: center;
     height: 50px;
     align-items: center;
+
 }
 
 
@@ -17,7 +18,8 @@ p{
 .logo{
     display: flex;
     max-width: 95px;  
-    
+    margin-bottom: 45px;
+    margin-top: -10px;
 }
 
 .imagenlogo{
@@ -53,26 +55,28 @@ nav ul{
 /*OK quitar los bullets botonera central navegador*/
 li{
     display: flex;
-    margin-top: -200px;
-    margin-right: 10px;
+    margin-top: -250px;
+
 }
 
 .nav1{
     margin-bottom: 50px;
+    margin-top: 60px;
     
 }
 .nav2{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .navigation{
     font-size: 18px !important;
     font-family: "Futura", sans-serif !important;
+    margin-left: -20px;
 }
 /* OK iconos arriba derecha*/
 .container2{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -81,9 +85,10 @@ li{
     color: rgba(0, 157, 149, 1);
     justify-content: end;
     align-items: center;
-    margin-top: -350px;
+    margin-top: -380px;
     text-decoration: none;
     padding: 10px;
+    margin-right: 10px;
 }
 
 .lupa{
@@ -91,9 +96,10 @@ li{
     color: rgba(0, 157, 149, 1);
     justify-content: end;
     align-items: center;
-    margin-top: -350px;
+    margin-top: -380px;
     text-decoration: none;
     padding: 10px;
+    margin-right: 10px;
 }
 
 .carrito{
@@ -101,9 +107,10 @@ li{
     color: rgba(0, 157, 149, 1);
     justify-content: end;
     align-items: center;
-    margin-top: -350px;
+    margin-top: -380px;
     text-decoration: none;
     padding: 10px;
+    margin-right: 20px;
 }
 
 /*OK Formato para el texto principal y para permitir que esté flotando sobre el fondo*/
@@ -145,18 +152,19 @@ li{
 .buttons{
     margin-top: 600px;
     color: white;
+    
 }
 
 .buttonPlanetSkinClub{
     background-color: #EA9FA6FF;
-    color: white;
-    padding: 14px 28px;
     border: 1px solid transparent;
-    height: 60px;
-    width: 220px;
+    height: 70px;
+    width: 270px;
     font-size: 18px;
     border-radius: 40px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 50px;
     margin-top: 50px;
 }
@@ -168,8 +176,8 @@ li{
     padding: 14px 28px;
     border: 1px solid transparent;
     height: 50px;
-    width: 140px;
-    font-size: 12px;
+    width: 145px;
+    font-size: 13px;
     letter-spacing: .2em;
     display: flex;
     align-items: center;
@@ -183,37 +191,44 @@ li{
     height: 70px;
     width: 70px;  
     margin-left: 1600px;
+    
 }
 
 .button1,.button2,.button3{
     text-decoration: none;
-    color: white;
+    color: white;;
 }
+
+.button2{
+    align-items: center;
+}
+
+
 
 /*-OK Cuando la pantalla sea menor de 480px, el menú del navbar debe convertirse en un menú desplegable u oculto.*/
 
 @media screen and (max-width: 480px){
-    .desplegable{
-      display: none;
+    div.container{
+      visibility: hidden;
     }
 }
 
 /*OK Cuando la pantalla sea mayor de 480px y menor de 768px, el menú tendrá que estar en el lateral.*/
 @media screen and (min-width: 480px){   
-    .desplegable{
+    div.container{
         display: block;
       }
 }
   @media screen and (max-width:768px){   
-    .desplegable{
+    div.container{
         display: block;
       }
 }
 
 
+
+
   /*DUDAS PARA RESOLVER EL LUNES CON ALDO
   1. Tamaño de la página
-  2. boton club se tendría que mover en lugar de dejar fijo
-  3. tamaño iconos todos arriba y abajo 
-  4. bton chat onlie poner a la derecha
+  2.@media screen que no funciona
 
