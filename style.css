@@ -8,7 +8,8 @@ p{
     letter-spacing: .2em;
     display: flex;
     justify-content: center;
-    height: 50px;
+    height: 60px;
+    width: 1680px;
     align-items: center;
 
 }
@@ -39,11 +40,11 @@ nav ul{
     align-items: center;
     flex-direction: row;
     margin-bottom: 30px;
+    
 } 
 
 /*OK botonera central navegador*/
 .navigation{
-    display: flex;
     align-items: center;
     text-decoration: none;
     margin-right: 70px;
@@ -62,22 +63,25 @@ li{
 .nav1{
     margin-bottom: 50px;
     margin-top: 60px;
+    margin-right: -160px;
     
 }
 .nav2{
     margin-bottom: 40px;
+    margin-right: -100px;
 }
 
 .navigation{
-    font-size: 18px !important;
-    font-family: "Futura", sans-serif !important;
+    font-size: 18px;
+    font-family: "Futura", sans-serif;
     margin-left: -20px;
 }
 /* OK iconos arriba derecha*/
 .container2{
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
     align-items: center;
+    margin-right: -130px;
 }
 
 .persona{
@@ -88,7 +92,7 @@ li{
     margin-top: -380px;
     text-decoration: none;
     padding: 10px;
-    margin-right: 10px;
+    gap: 10px;
 }
 
 .lupa{
@@ -208,24 +212,22 @@ li{
 /*-OK Cuando la pantalla sea menor de 480px, el menú del navbar debe convertirse en un menú desplegable u oculto.*/
 
 @media screen and (max-width: 480px){
-    div.container{
+    .container{
       visibility: hidden;
     }
 }
 
 /*OK Cuando la pantalla sea mayor de 480px y menor de 768px, el menú tendrá que estar en el lateral.*/
 @media screen and (min-width: 480px){   
-    div.container{
-        display: block;
+    .container{
+        flex-direction: row;
       }
 }
   @media screen and (max-width:768px){   
-    div.container{
+    d.container{
         display: block;
       }
 }
-
-
 
 
   /*DUDAS PARA RESOLVER EL LUNES CON ALDO
